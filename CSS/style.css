@@ -1,0 +1,144 @@
+
+*{
+    /* retirar o espacamento interno e externo */
+    padding:0;
+    margin:0;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+
+
+.sidebar{
+    position:fixed;
+    width: 20%;
+    height: 100vh;
+    /* é uma borda de um pixel solido(uma linha reta)*/
+    border: 1px solid#555;
+}
+.sidebar-herder{
+    /*cor do texto*/
+    color: #fff;
+
+    /*cor do fundo*/
+    background: rgb(255,101,8);
+background: linear-gradient(0deg, rgba(255,101,8,1) 0%, rgba(255,177,0,1) 35%);
+
+height: 100px;
+
+    /* acrescentanto espacamento*/
+    padding: 30px;
+
+    display: flex;
+    /* alinhando no centro*/
+    justify-content: center;
+    align-items: center;
+}
+.img-slaca{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    padding: 15px 50px;
+}
+
+.img-slaca img{
+    height: 80px;
+}
+.navigation-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-direction: column;
+    border-bottom: 1px solid #555;
+    width: 100%;
+    position: relative;
+
+}
+.navigation-item:hover{
+    background-color:#FFB100 ;
+    /* adiciona o cursor(uma maozinha)*/
+    cursor: pointer;
+}
+
+.navigation-item:hover::after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+    transition: all .2s linear ease;
+
+}
+.box{
+
+    margin-left: 20%;
+    display: flex;
+   
+
+
+    /* JUSTIFY-CONTENT alinha o conteudo , SPACE BETWEEN espaço entre  */
+    justify-content: space-between;
+    /* padding faz a margem */
+    padding: 10px 20px;
+    background-color: #FFB100;
+    height: 100px;
+}
+
+.box-1{
+    width: 700px;
+    display: flex;
+
+     /*  organiza em coluna */
+    flex-direction: column-reverse;
+
+    /* espacamento entre linhas */
+    justify-content: space-between;
+
+}
+.box-1 h2{
+    font-size: 20px ;
+}
+
+.box-2{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.box-3{
+    width: 200px;
+    display: flex;
+
+    /* alinha o conteudo*/ 
+    justify-content: space-between;
+    /* alinhar os itens */
+    align-items: center;
+}
+
+#foto-perfil{
+    /* faz arredondar elementos, botão, imagem, div, arredonda tudo */
+    border-radius: 100%;
+    height: 60px;
+}
+
+#dropdown{
+    
+    outline: none;
+    
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
